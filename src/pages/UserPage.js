@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Axios from 'axios';
 
 export default function UserPage(props) {
@@ -46,6 +47,7 @@ export default function UserPage(props) {
             </tr>
           </tbody>
         </table>
+        <Link to="/">← back to Home Page</Link>
       </div>
     )
   );
